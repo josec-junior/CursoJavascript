@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title> Primeiros passos com o DOM </title>
+        <style>
+            body {
+                background: #447dc7;
+                color: #ffffff;
+                font: normal 18pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Iniciando estudos com DOM </h1>
+        <p> Aqui vai o resultado </p>
+        <p> Aprendendo a usar o <strong> DOM </strong> em JavaScript </p>
+        <div name = "mensagem" id = "mensagem" class = "mensagem">
+            Clique em mim
+        </div>
+
+        <script> 
+            /* Selecionando objetos pela tag 
+            var p1 = window.document.getElementsByTagName("p")[0]
+            p1.style.color = "red"
+            window.document.write("Está escrito assim: " + p1.innerText) */
+            
+            /* Selecionando objeto pelo id 
+            var msg = window.document.getElementById("#mensagem")
+            msg.style.background =s "green"
+            msg.innerText = "Estou aguardando..." */
+
+            /* Selecionando objetos pelo nome 
+            var msg = window.document.getElementsByName("mensagem")[0]
+            msg.innerText = "Olá!" */
+
+            /* Selecionando objetos pela classe 
+            var msg = window.document.getElementsByClassName(".mensagem")[0]
+            msg.style.color = "black"
+            msg.style.background = "white" */
+
+            /* Selecionando objetos pelo querySelector 
+            var msg = window.document.querySelector("div#mensagem")
+            msg.style.background = "blue" */
+            
+        </script>
+    </body>
+</html>

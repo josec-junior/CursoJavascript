@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie = edge">
+        <title> Teste de Nacionalidade </title>
+        <style>
+            body {
+                background: #040499;
+                color: #ffffff;
+                font: Normal 18pt Arial;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            input {
+                width: 180px;
+                height: 25px;
+                margin-left: 8px;
+                font: Normal 14pt Arial;
+            }
+
+            .btn {
+                background: green;
+                border-radius: 5px;
+                width: 100px;
+                height: 35px;
+                border: green;
+                color: white;
+                font: Bold 14pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Teste de Nacionalidade </h1>
+        Digite o País que você nasceu: <input type = "text" name = "txtPais" id = "txtPais">
+        <input type = "button" value = "Verificar" class = "btn" onclick = "verificarNacionalidade()">
+        <div id = "resultado">
+            
+        </div>
+
+        <script>
+            function verificarNacionalidade() {
+                var txtPais = window.document.getElementById("txtPais")
+                var res = window.document.querySelector("div#resultado")
+                var pais = String(txtPais.value)
+                res.innerHTML = `<p> Vivendo em ${pais} </p>`
+                if(pais == "Brasil") {
+                    res.innerHTML += `Você é Brasileiro!`
+                } else {
+                    res.innerHTML += "Você é Estrangeiro!"
+                }
+            }
+        </script>
+    </body>
+</html>
