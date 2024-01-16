@@ -32,6 +32,7 @@ main {
     background-color: var(--cor02);
     color: var(--cor03);
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.492);
 }
 
 main > ul {
