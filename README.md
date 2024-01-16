@@ -1,2 +1,4 @@
 # CursoJavascript
-Repositório contendo exercícios, material de apoio e desafios realizados no curso de JavaScript do Curso em Vídeo
+Este repositório contém materiais de aula, exercícios e desafios resolvidos durante a realização do curso de JavaScript moderno do Curso em Vídeo, lecionado pelo professor Gustavo Guanabara.
+
+
