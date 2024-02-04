@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio da Calculadora de Troco </title>
+    <style>
+        body {
+            font: normal 1.2em Arial;
+        }
+
+        button {
+            font: normal 0.8em Arial;
+        }
+
+        button {
+            width: 150px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Calculando o Troco </h1>
+    <button id="btnCompra"> Comprar Produto </button>
+
+    <script>
+        var btn = window.document.querySelector("button#btnCompra")
+        btn.addEventListener("click", comprar)
+
+        function comprar() {
+            var nome = window.prompt("Qual é o produto que você está comprando?")
+            var preco = window.prompt(`Quanto custa o(a) ${nome} que você está comprando?`)
+            var pago = window.prompt(`Qual foi o valor que você pagou pelo(a) ${nome}?`)
+            var troco = Number(pago) - Number(preco)
+            window.alert(`Você comprou um/uma ${nome} que custou ${preco} R$.\nPagou ${pago} R$ e vai receber ${troco} R$ de troco.\nVolte sempre!`)
+        }
+    </script>
+</body>
+
+</html>

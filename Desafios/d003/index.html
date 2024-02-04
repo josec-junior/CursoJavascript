@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio Antes e Depois </title>
+    <style>
+        body {
+            font: normal 1.2em Arial;
+        }
+
+        button {
+            font: normal 0.8em Arial;
+            font-weight: bold;
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Antes e Depois </h1>
+    <button> Antecessor e Sucessor </button>
+
+    <script>
+        var btn = window.document.getElementsByTagName("button")[0]
+        btn.addEventListener("click", clicar)
+
+        function clicar() {
+            var num = window.prompt("Digite um número inteiro qualquer: ")
+            var num = Number(num)
+            window.alert(`Antes de ${num}, temos o número ${num - 1}.\nDepois de ${num}, temos o número ${num + 1}.`)
+        }
+    </script>
+</body>
+
+</html>
