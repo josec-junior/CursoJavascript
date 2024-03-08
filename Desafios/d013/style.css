@@ -42,3 +42,20 @@ div#res {
     padding: 10px;
     text-align: left;
 }
+
+span#aprovado {
+    background-color: rgb(47, 183, 47);
+    font-weight: bold;
+    opacity: 0.90;
+}
+
+span#recuperacao {
+    color: rgb(196, 146, 20);
+    font-weight: bold;
+}
+
+span#reprovado {
+    background-color: rgb(226, 54, 54);
+    font-weight: bold;
+    opacity: 0.90;
+}
